@@ -13,3 +13,66 @@ $primary: #D81E05;
 */
 
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #8DAF2D;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+  padding-bottom:200px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contactInfo {
+  text-align: center;
+}
+body a:hover {
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+body > .navbar {
+  background-color: white;
+  border-color: #8DAF2D;
+}
+body > .navbar .navbar-brand {
+  color: #8DAF2D;
+}
+body > .navbar .navbar-brand:hover{
+  color:#333;
+}
+body > .navbar .navbar-nav > li > a, a:hover {
+  color: #8DAF2D;
+}
+body > .navbar .navbar-nav > li > a:hover {
+  color: #333;
+}
+h1 {
+  text-align:center;
+}
+table {
+  align: center;
+  text-align: center;
+}
+table th {
+  text-align: center;
+}
+table tr {
+  text-align: center;
+}
