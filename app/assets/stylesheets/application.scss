@@ -24,11 +24,17 @@ body {
 
 .footer {
   position: fixed;
-  left:0;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #8DAF2D;
-  text-align: center;
+}
+
+footer>div {
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
 }
 
 body > .container {
@@ -43,9 +49,6 @@ body > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
-.contactInfo {
-  text-align: center;
-}
 body a:hover {
   background-color: transparent !important;
   text-decoration: none !important;
@@ -54,22 +57,44 @@ body > .navbar {
   background-color: white;
   border-color: #8DAF2D;
 }
-body > .navbar .navbar-brand {
-  color: #8DAF2D;
-}
-body > .navbar .navbar-brand:hover{
-  color:#333;
-}
 body > .navbar .navbar-nav > li > a, a:hover {
   color: #8DAF2D;
 }
 body > .navbar .navbar-nav > li > a:hover {
   color: #333;
 }
+nav {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #8DAF2D;
+}
+nav>ul {
+  padding-right: 10em;
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+nav>ul>li {
+  display: block;
+  float: right;
+  text-align: center;
+  line-height: 50px;
+  border-left: 1px solid #8DAF2D;
+}
+nav>ul>li>a:hover {
+  border-bottom: 3px solid #8DAF2D;
+}
+nav>ul>li>a.active {
+  border-bottom: 3px solid red;
+}
 h1 {
   text-align:center;
 }
 table {
+  background-color: red;
   align: center;
   text-align: center;
 }
