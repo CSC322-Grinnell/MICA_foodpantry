@@ -7,63 +7,50 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-foods = [{:name => "100% Juice Concentrate/Boxes", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Beans", :needpriority => 0, :item_type => "Food"},
-         {:name => "Boxed Potatoes", :needpriority => 0, :item_type => "Food"},
-         {:name => "Fresh Produce", :needpriority => 0, :item_type => "Food"},
-         {:name => "Frozen Foods", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Fruits", :needpriority => 2, :item_type => "Food"},
-         {:name => "Granola Bars", :needpriority => 0, :item_type => "Food"},
-         {:name => "Jelly", :needpriority => 0, :item_type => "Food"},
-         {:name => "Mac 'n Cheese", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Meat", :needpriority => 0, :item_type => "Food"},
-         {:name => "Miscellaneous Food Items", :needpriority => 0, :item_type => "Food"},
-         {:name => "Oatmeal", :needpriority => 0, :item_type => "Food"},
-         {:name => "Pancake Mix", :needpriority => 0, :item_type => "Food"},
-         {:name => "Pasta & Pasta Sauce", :needpriority => 4, :item_type => "Food"},
-         {:name => "Peanut Butter", :needpriority => 0, :item_type => "Food"},
-         {:name => "Ramen", :needpriority => 0, :item_type => "Food"},
-         {:name => "Refrigerated Food", :needpriority => 0, :item_type => "Food"},
-         {:name => "Rice", :needpriority => 0, :item_type => "Food"},
-         {:name => "Skillet Dinners", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Soup", :needpriority => 0, :item_type => "Food"},
-         {:name => "Syrup", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Tuna", :needpriority => 0, :item_type => "Food"},
-         {:name => "Canned Vegetables", :needpriority => 0, :item_type => "Food"},
-         {:name => "Baby Food", :needpriority => 0, :item_type => "Food"},
-         {:name => "Baby Wipes", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Baby Wash", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Children's Book", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Deodorant", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Diapers", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Dishwashing Liquid", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Floss", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Infant Formula", :needpriority => 0, :item_type => "Food"},
-         {:name => "Laundry Detergent", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Paper Towels", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Razers & Shaving Cream", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Shampoo & Conditioner", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Soap", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Tampons", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Tissues", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Toilet Paper", :needpriority => 0, :item_type => "Non-Food"},
-         {:name => "Toothbrushes", :needpriority => 0, :item_type => "Non-Food"},
+items = [{:name => "100% Juice Concentrate/Boxes", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Beans", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Boxed Potatoes", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Fresh Produce", :priority => 3, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Frozen Foods", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Fruits", :priority => 2, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Granola Bars", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Jelly", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Mac 'n Cheese", :priority => 3, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Meat", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Miscellaneous Food Items", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Oatmeal", :priority => 1, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Pancake Mix", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Pasta & Pasta Sauce", :priority => 4, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Peanut Butter", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Ramen", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Refrigerated Food", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Rice", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Skillet Dinners", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Soup", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Syrup", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Tuna", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Canned Vegetables", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Baby Food", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Baby Wipes", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Baby Wash", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Children's Book", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Deodorant", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Diapers", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Dishwashing Liquid", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Floss", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Infant Formula", :priority => 0, :item_type => "Food", :location => "Grinnell"},
+         {:name => "Laundry Detergent", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Paper Towels", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Razers & Shaving Cream", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Shampoo & Conditioner", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Soap", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Tampons", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Tissues", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Toilet Paper", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
+         {:name => "Toothbrushes", :priority => 0, :item_type => "Non-Food", :location => "Grinnell"},
 ]
-foods.each do |fud|
-  FoodItem.create!(fud)
+items.each do |thing|
+  Item.create!(thing)
 end
 
-contacts = [{:hours => "8AM-5PM", :email => "info@micaonline.org", :street_location => "611 4th St", :state_location => "Grinnell, IA 50112", :phone_number => "641-236-3923", :holiday_hours => "Closed on holidays"},
-]
-
-contacts.each do |con|
-  ContactInfo.create!(con)
-end
-
-abouts = [{:statement => "In all our endeavors, we are guided by five values: family, helping others, partnership, achieving results and innovation. These values direct the way we provide services and the way that we structure our organization.  They constitute the core of MICA's philosophy and, together with our strategic plan, serve as guideposts for our staff.  Our core values echo the mission of community action around the country but also highlight MICA's focus on providing excellent services to families."},
-]
-
-abouts.each do |ab|
-  About.create!(ab)
-end
 
