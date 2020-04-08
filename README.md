@@ -21,4 +21,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+ActiveAdmin Stuff:
+https://stackoverflow.com/questions/9472852/devise-and-multiple-user-models
+
+https://github.com/CanCanCommunity/cancancan/wiki/defining-abilities
+
+https://activeadmin.info/10-custom-pages.html#create-a-new-page
