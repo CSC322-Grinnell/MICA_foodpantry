@@ -1,11 +1,29 @@
 <h1>Welcome to MICA Food Pantry</h1>
-  <table class="table" width="100%" style="margin:0px">
-    <tr>
-      <th style="background-color:#8DAF2D;"><h2>Food Items in Need</h2></th>
-    </tr>
-    <% @needed_food_items.each do |food_item| %>
+<div class="row">
+  <div class = "col-sm-6">
+    <table class="table" width="50%" style="margin:0px">
       <tr>
-        <td style="font-size:18px; background-color:#BFD08F;"><%= food_item.name %></td>
+        <th style="background-color:#8DAF2D;"><h2>Food Items in Need</h2></th>
       </tr>
-    <% end %>
-  </table>
+      <% @needed_food_items.each do |food_item| %>
+        <tr>
+          <td style="font-size:18px; background-color:#BFD08F;"><%= food_item.name %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <div class = "col-sm-6">
+    <table class="table">
+      <tr>
+        <th style="background-color:#F2C83E;"><h2>Non Food Items in Need</h2></th>
+      </tr>
+      <% @needed_non_food_items.each do |non_food_item| %>
+        <tr>
+          <th style="background-color:#F2C83E;"><%= non_food_item.name %></th>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
