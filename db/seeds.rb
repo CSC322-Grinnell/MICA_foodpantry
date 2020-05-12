@@ -55,3 +55,4 @@ end
 
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin2@example.com', password: 'password', password_confirmation: 'password', tier: 1, location: "Grinnell") if Rails.env.development?

@@ -32,11 +32,13 @@ class Ability
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
 
     ######################################################################
-    # Going to be something like the following
-    # if admin_user.staff?
-    #   can :manage, item, location: admin_user.location
-    # else 
-    #   can :manage, :all
-    # end
+    #Staff is a food pantry worker, global is an administrator
+    if @admin_user.staff?
+      can :manage, item, location: admin_user.location
+    elsif @admin_user.global?
+      can :manage, :all
+    else
+      can :read, item
+    end
   end
 end
