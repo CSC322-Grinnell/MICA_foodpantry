@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2020_05_01_213625) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "tier"
+    t.integer "tier", default: 0
     t.string "location"
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
