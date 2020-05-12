@@ -4,13 +4,17 @@
 
 /*
  * Bootstrap provides good defaults for styling and some basic widgets.
- *
  * Any overrides to Bootstrap variables should come before the import statement.
  */
 
 /* Grinnell Red ;)
+
 $primary: #D81E05;
 */
+
+
+
+
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 html {
@@ -23,7 +27,7 @@ body {
 }
 
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -66,13 +70,13 @@ body > .navbar .navbar-nav > li > a:hover {
 nav {
   width: 100%;
   height: 50px;
-  position: absolute;
+  sition: absolute;
   top: 0;
   left: 0;
   border-bottom: 1px solid #8DAF2D;
 }
 nav>ul {
-  padding-right: 10em;
+  padding-right: 11em;
   width: 50%;
   float: right;
   height: 100%;
@@ -104,3 +108,40 @@ table th {
 table tr {
   text-align: center;
 }
+
+
+.centernav {
+  height: 100%;
+  width: 160px;
+  position:none;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  background-color: green;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  border: 2px solid #8DAF2D;
+  display: block;
+}
+
+
+
+.sidenav a:hover {
+  color: green;
+}
+
+.main {
+  margin-center: 150px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+

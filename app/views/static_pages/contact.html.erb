@@ -1,3 +1,28 @@
 <% provide(:title, 'Contact')%>
 <h1>Contact Us</h1>
-<p>Contact MICA about the food pantry details</p>
+<div class="row">
+    <table class="table table-striped">
+      <tr style="background-color:#8DAF2D;">
+        <th>Hours</th>
+        <th>Email</th>
+        <th>Street location</th>
+        <th>State location</th>
+        <th>Phone number</th>
+        <th>Holiday hours</th>
+      </tr>
+        <tr style="background-color:#BFD08F;">
+          <% contact_info = {:hours => "8AM-5PM",
+                              :email => "info@micaonline.org",
+                              :street_location => "611 4th St",
+                              :state_location => "Grinnell, IA 50112",
+                              :phone_number => "641-236-3923",
+                              :holiday_hours => "Closed on holidays"} %>
+          <td><%= contact_info[:hours] %></td>
+          <td><%= contact_info[:email] %></td>
+          <td><%= contact_info[:street_location] %></td>
+          <td><%= contact_info[:state_location] %></td>
+          <td><%= contact_info[:phone_number] %></td>
+          <td><%= contact_info[:holiday_hours] %></td>
+        </tr>
+    </table>
+</div>
