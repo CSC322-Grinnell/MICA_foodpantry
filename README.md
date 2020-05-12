@@ -35,3 +35,4 @@ To Do:
     Add methods to models/admin_users.rb to determine which tier admin they are
     In ability.rb file, make us of those methods to determine what they 'can' do
     Update admin/admin_users.rb to add to the table and form with location/tier.  
+    This is a small change
