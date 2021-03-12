@@ -21,6 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
+The current deployment (?) is at:  https://mica-foodpantry.herokuapp.com/ under the csc32x-2@grinnell.edu account.  
+
 ActiveAdmin Stuff:
 https://stackoverflow.com/questions/9472852/devise-and-multiple-user-models
 
