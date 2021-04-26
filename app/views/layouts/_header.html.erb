@@ -1,14 +1,12 @@
-<header class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-  <div class="container">
-    <%= link_to "MICA Food Pantries", root_path, id:"logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact Us", contact_path %></li>
-        <li><%= link_to "Help", help_path %>
-        <li><%= link_to "Admin Log In", 'admin/login' %></li>
-      </ul>
-    </nav>
-  </div>
+<header class="navbar-fluid navbar-fixed-top navbar-inverse" role="navigation">
+  <nav>
+    <%= link_to "MICA Food Pantries", root_path, id:"logo", class: "navbar-brand" %>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact Us", contact_path %></li>
+      <li><%= link_to "Help", help_path %>
+      <li><%= link_to "Admin Log In", 'admin/login' %></li>
+    </ul>
+  </nav>
 </header>
