@@ -20,6 +20,10 @@ html {
   min-height: 100%;
 }
 
+.center {
+  text-align: center;
+}
+
 body {
   font-family: 'Roboto', sans-serif !important;
   padding: 0px;
@@ -91,7 +95,9 @@ footer > div > ul >li > a:hover {
 }
 
 body > .container {
-  padding: 60px 15px 0 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 15px 0 0;
 }
 
 .container .text-muted {
@@ -112,6 +118,7 @@ body > .navbar-fluid {
 body > .navbar-fluid .navbar-nav > li > a, a:hover {
   color: #8DAF2D;
 }
+
 body > .navbar-fluid .navbar-nav > li > a:hover {
   color: #333;
 }
@@ -198,6 +205,8 @@ table tr {
   margin-top: 20px;
   margin-bottom: 20px;
 
+  border-radius: 15px;
+
   padding: 12px 8px 12px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -212,6 +221,28 @@ table tr {
     border: 2px solid #8DAF2D;
     text-decoration: none;
     color: white;
+}
+
+/* Location */
+.title {
+  padding: 8px;
+  margin-bottom: 40px;
+
+  font-weight: lighter;
+}
+
+/* Cards */
+.card {
+  border-radius: 0px;
+  box-shadow: 1px 3px #777;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  color: white;
+  background-color: #8DAF2D;
 }
 
 .main {
