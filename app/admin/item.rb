@@ -3,6 +3,8 @@ ActiveAdmin.register Item do
     #     para "This will be the location of a table of items at the pantries."
     # end
     #This will be the code for doing the pantry items 
+    permit_params :name, :item_type, :location, :priority
+
     index do
         selectable_column
         id_column

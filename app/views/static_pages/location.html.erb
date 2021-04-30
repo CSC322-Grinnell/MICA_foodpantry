@@ -1,4 +1,4 @@
-<% @items = Item.all %>
+<% @items = Item.all.order(priority: :desc) %>
 <div class="center jumbotron">
   <h1 class="title">Location Food Pantry</h1>
 
