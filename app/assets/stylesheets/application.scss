@@ -143,10 +143,6 @@ body > .navbar-fluid .navbar-nav > li > a:hover {
   text-size: 4em;
 }
 
-.navbar-inverse {
-    background-color: #8DAF2D;
-}
-
 nav {
   width: 100%;
   min-height: 60px;
@@ -156,6 +152,17 @@ nav {
 #mynav {
     background-color: #8DAF2D;
     color: white;
+}
+
+#nav-button {
+    margin-top: 15px;
+    margin-left: 40px;
+
+    width: 15px;
+    height: 25px;
+
+    background-color: white;
+    border-color: white;
 }
 
 #navbar-toggler {
