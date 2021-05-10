@@ -2,11 +2,21 @@
 <div class="center jumbotron">
   <h1 class="title">Location Food Pantry</h1>
 
+  <div class="limiter">
+    <p id="location-subheading">
+    Items are listed from high to low priority, with the most
+    needed items being in <span>red</span>.
+    </p>
+  </div>
+
+
   <div class="container">
     <div class="row">
       <% @items.each do |item| %>
-        <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="col-sm-12 col-md-4 col-lg-4">
           <% @name =  item.name %>
+          <% @color = color_picker(item) %>
+          <% puts @color %>
           <%= render 'layouts/item' %>
         </div>
       <% end %>

@@ -1,12 +1,23 @@
-<header class="navbar-fluid navbar-fixed-top navbar-inverse" role="navigation">
-  <nav>
+<header role="navigation">
+  <nav class="navbar-fluid navbar-expand-lg" id="mynav">
     <%= link_to "MICA Food Pantries", root_path, id:"logo", class: "navbar-brand" %>
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><%= link_to "Contact Us", contact_path %></li>
-      <li><%= link_to "Help", help_path %>
-      <li><%= link_to "Admin Log In", 'admin/login' %></li>
-    </ul>
+    <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-toggler" aria-expanded="false"
+                                                                                                     aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <ul class="nav navbar-nav ml-auto">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact Us", contact_path %></li>
+        <li><%= link_to "Help", help_path %>
+        <li><%= link_to "Admin Log In", 'admin/login' %></li>
+      </ul>
+    </div>
   </nav>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </header>
