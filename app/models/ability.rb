@@ -33,12 +33,13 @@ class Ability
 
     ######################################################################
     #Staff is a food pantry worker, global is an administrator
-    if @admin_user.staff?
-      can :manage, item, location: admin_user.location
-    elsif @admin_user.global?
+    if admin_user.staff?
+      can :manage, Item    
+      can :read, :all
+    elsif admin_user.global?
       can :manage, :all
     else
-      can :read, item
+      can :read, :all
     end
   end
 end

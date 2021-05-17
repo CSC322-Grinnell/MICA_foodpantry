@@ -6,7 +6,7 @@ class AdminUser < ApplicationRecord
 
          #Add methods here, I think the naming should be staff? for lower tier admin and global? for higher tier.
          def staff? #user is a worker at the food pantry
-          if @admin_user.tier == 0
+          if self.tier == 0
             return true
           else
            return true
@@ -16,7 +16,7 @@ class AdminUser < ApplicationRecord
         end
 
         def global? #user is a worker at the organization
-          if @admin_user.tier == 1
+          if self.tier == 1
             return true
           else
             return false

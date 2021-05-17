@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
 
   <body>
     <%= render 'layouts/header' %>
     <div class="container">  
       <%= yield %>
-      <%= render 'layouts/footer' %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
